@@ -1,0 +1,65 @@
+/* App styling */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Header component */
+.header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Main Page component */
+.main-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.blog-post {
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+/* Blog Details component */
+.blog-details-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.blog-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.blog-content {
+  font-size: 16px;
+}
+
+/* Favorites component */
+.favorites-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.favorite-post {
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.favorite-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
