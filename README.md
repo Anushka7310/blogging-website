@@ -22,15 +22,12 @@ Check out the live demo of the Blogging Website here: [Live Demo](#your-live-dem
 - Search for specific blog posts based on titles or authors (optional).
 - Use local storage to persist favorites and comments across page reloads (optional).
 
-## Requirements
+## Technologies Used
 
 - React.js
 - React Router
-- Fetch data from [JSON Placeholder APIs](https://jsonplaceholder.typicode.com/):
-  - All posts: [https://jsonplaceholder.typicode.com/posts](https://jsonplaceholder.typicode.com/posts)
-  - Comments for each post: [https://jsonplaceholder.typicode.com/comments?postId=<postId>](https://jsonplaceholder.typicode.com/comments?postId=<postId>)
-  - Author of each post: [https://jsonplaceholder.typicode.com/users?id=<userId>](https://jsonplaceholder.typicode.com/users?id=<userId>)
-- CSS or a UI framework for styling.
+- **Tailwind CSS** for styling
+- [JSON Placeholder APIs](https://jsonplaceholder.typicode.com/)
 
 ## Running the Application
 
