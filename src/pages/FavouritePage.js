@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
-import { isFavorite, getFavourites, removeFavorite } from "../utils/favorites";
+import { getFavourites, removeFavorite } from "../utils/favorites";
 
 function Favorites() {
   const favorites = getFavourites();
@@ -12,8 +12,12 @@ function Favorites() {
     const fetchFavoritePosts = async () => {
       const favoritePostPromises = favorites.map(async (postId) => {
         try {
-          const response = await axios.get(`https://jsonplaceholder.typicode.com/posts/${postId}`);
-          const author = await axios.get(`https://jsonplaceholder.typicode.com/users?id=${response.data.userId}`);
+          const response = await axios.get(
+            `https://jsonplaceholder.typicode.com/posts/${postId}`
+          );
+          const author = await axios.get(
+            `https://jsonplaceholder.typicode.com/users?id=${response.data.userId}`
+          );
           return { post: response.data, author: author.data[0] };
         } catch (error) {
           console.error("Error fetching post:", error);
@@ -30,18 +34,25 @@ function Favorites() {
 
   const handleRemoveFavorite = (postId) => {
     removeFavorite(String(postId));
-    setFavoritePosts(favoritePosts.filter((favorite) => favorite.post.id !== postId));
+    setFavoritePosts(
+      favoritePosts.filter((favorite) => favorite.post.id !== postId)
+    );
   };
 
   return (
     <div className="bg-gray-100 min-h-screen p-8 h-screen">
-      <h1 className="text-3xl font-semibold text-center mb-6">Favorite Blogs</h1>
+      <h1 className="text-3xl font-semibold text-center mb-6">
+        Favorite Blogs
+      </h1>
       <Link to="/" className="block text-blue-500 hover:underline mb-4">
         Back to Main Page
       </Link>
       <ul className="space-y-4">
         {favoritePosts.map((favorite) => (
-          <li key={favorite.post.id} className="bg-white rounded-lg shadow-lg p-4">
+          <li
+            key={favorite.post.id}
+            className="bg-white rounded-lg shadow-lg p-4"
+          >
             <Link to={`/post/${favorite.post.id}`}>
               <h3 className="text-xl font-semibold text-blue-600 hover:underline mb-2">
                 Title: {favorite.post.title}
