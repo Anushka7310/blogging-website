@@ -4,7 +4,7 @@ This is a simple blogging website built using React.js that allows users to view
 
 ## Demo
 
-Check out the live demo of the Blogging Website here: [Live Demo](#your-live-demo-link-here)
+Check out the live demo of the Blogging Website here: [Live Demo](https://blogging-website-44501.web.app/)
 
 ## Features
 
@@ -13,14 +13,9 @@ Check out the live demo of the Blogging Website here: [Live Demo](#your-live-dem
 - Add blogs to the favorites list.
 - View a separate page displaying the titles and authors of favorite blog posts.
 - Remove blog posts from the favorites list.
-- Error handling with appropriate messages.
 - Responsive design for all devices.
-
-### Bonus Features
-
-- Comment on blog posts (optional).
-- Search for specific blog posts based on titles or authors (optional).
-- Use local storage to persist favorites and comments across page reloads (optional).
+- Search for specific blog posts based on titles.
+- Use local storage to persist favorites and comments across page reloads.
 
 ## Technologies Used
 
