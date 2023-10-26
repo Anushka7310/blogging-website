@@ -40,3 +40,7 @@ To run the project locally, follow these steps:
    npm start
 
 ![blogging-application](https://github.com/Anushka7310/blogging-website/assets/61081130/2ee4a749-e884-4573-a055-520c41430bf4)
+
+
+![blogging-serach page](https://github.com/Anushka7310/blogging-website/assets/61081130/af04ba16-5b8e-477c-a36f-6378220c50a7)
+
