@@ -39,3 +39,4 @@ To run the project locally, follow these steps:
    ```sh
    npm start
 
+![blogging-application](https://github.com/Anushka7310/blogging-website/assets/61081130/2ee4a749-e884-4573-a055-520c41430bf4)
